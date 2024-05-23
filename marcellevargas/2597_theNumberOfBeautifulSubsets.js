@@ -13,7 +13,7 @@ const backtrack = (result, currentPartition, arr, target, start) => {
     for (let i = start; i < arr.length; i++) {
         currentPartition.push(arr[i]);
 
-        console.log(currentPartition)
+
         if (verifyBeautifulSubset(currentPartition, target)) {
             result.push([...currentPartition]);
         }
